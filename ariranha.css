@@ -1,0 +1,437 @@
+/* Remove o padding e a margem de todos os elementos */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Estiliza a seção do logo */
+#logo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+/* Estiliza a seção do blog */
+#blog {
+    padding-left: 120px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #4b779d;
+    height: 80px;
+}
+
+/* Centraliza e ajusta o menu */
+#ajustar_menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Estiliza os links dentro do menu */
+#ajustar_menu a {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+/* Estiliza a seção de edição do menu */
+#editar_menu {
+    margin-left: 5px;
+    color: #a6a6a6;
+}
+
+/* Cor de fundo do corpo */
+body {
+    background-color: #d9d9d9;
+}
+
+/* Estiliza a linha horizontal */
+hr {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #a6a6a6;
+}
+
+/* Estiliza o nome dos animais */
+.nome_animal {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+/* Estiliza o nome científico */
+.nome_cientifico {
+    padding-left: 20px;
+    color: #f29e38;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+/* Estiliza o título */
+.titulo {
+    color: #f29e38;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+/* Estiliza o texto do parágrafo */
+.texto {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+/* Centraliza a imagem da ariranha */
+#imagem_ariranha {
+    text-align: center;
+}
+
+/* Centraliza as imagens */
+.imagens {
+    text-align: center;
+}
+
+/* Estiliza o rodapé */
+#footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Estiliza geral do rodapé */
+footer {
+    background-color: #2e8b57;
+    height: 130px;
+    color: white;
+    text-align: center;
+}
+
+/* Botão de voltar para o topo */
+#botao_voltar_pcima {
+    width: 65px;
+    height: 65px;
+    background-color: #a6a6a6;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Estiliza o link dentro do botão de voltar para o topo */
+#botao_voltar_pcima a {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estiliza a imagem dentro do botão de voltar para o topo */
+#botao_voltar_pcima img {
+    width: 100%;
+    float: left;
+    padding-right: -20px;
+    margin-top: -5px;
+}
+
+
+#links_rodape {
+    color:  #1c6d41;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#links_rodape a {
+    color: white;
+    flex-wrap: column;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+footer {
+    height: 320px;
+}
+
+/* Media query para telas entre 768px e 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Ajusta o menu para telas médias */
+    #ajustar_menu {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        font-size: 23px;
+    }
+
+    /* Ajusta a posição do blog */
+    #blog {
+        margin-left: 200px;
+    }
+
+    /* Define layout em duas colunas */
+    #colocar_duas_colunas {
+        display: flex;
+        gap: 50px;
+    }
+
+    /* Ajustes para a coluna 1 */
+    #coluna1 {
+        width: 60%;
+        margin-left: -170px;
+        position: relative;
+    }
+
+    /* Centraliza a imagem da ariranha */
+    #imagem_ariranha {
+        position: absolute;
+        padding-left: 250px;
+    }
+
+    #ajustar_texto_para_pc{
+        padding-top: 200px;
+    }
+
+    /* Ajustes para a coluna 2 */
+    #coluna2 {
+        width: 60%;
+        padding-right: 30px;
+        margin-top: -40px;
+    }
+
+    /* Ajusta o padding do texto */
+    #site_dos_textos {
+        padding-left: 50px;
+    }
+
+    /* Ajusta o padding do nome do animal */
+    .nome_animal {
+        padding-left: 60px;
+    }
+
+    /* Ajusta o padding do nome científico */
+    .nome_cientifico {
+        padding-left: 60px;
+    }
+}
+
+/* Media query para telas maiores que 992px */
+@media (min-width: 992px) {
+
+    /* Reduz o tamanho da fonte do título */
+    .titulo {
+        font-size: 20px;
+    }
+
+    /* Ajusta o menu para telas grandes */
+    #ajustar_menu {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        font-size: 15px;
+    }
+
+    /* Ajusta a posição do blog para telas grandes */
+    #blog {
+        margin-left: 500px;
+    }
+
+    /* Ajusta o layout das colunas */
+    #colocar_duas_colunas {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Ajustes para a coluna 1 */
+    #coluna1 {
+        width: 60%;
+        margin-left: -450px;
+        position: relative;
+        padding-left: 250px;
+        font-size: 12px;
+    }
+
+    /* Adiciona padding a alguns elementos de texto */
+    #ajustar_texto_anta_pc,
+    #ajustar_texto_para_tablet {
+        padding-top: 200px;
+    }
+
+    /* Ajusta a posição da imagem da ariranha */
+    #imagem_ariranha {
+        margin-left: 350px;
+        position: absolute;
+    }
+
+    /* Ajustes para a coluna 2 */
+    #coluna2 {
+        width: 60%;
+        float: left;
+        padding-left: 150px;
+        margin-top: -40px;
+        padding-right: 100px;
+        font-size: 12px;
+    }
+
+    /* Ajusta o padding do texto */
+    #site_dos_textos {
+        padding-left: 100px;
+        font-size: 12px;
+    }
+
+    /* Ajusta o estilo do nome do animal */
+    .nome_animal {
+        padding-left: 120px;
+        font-size: 19px;
+    }
+
+    /* Ajusta o estilo do nome científico */
+    .nome_cientifico {
+        padding-left: 120px;
+        font-size: 22px;
+    }
+
+    /* Ajusta o padding de certos textos */
+    #ajustar_texto_para_pc {
+        padding-top: 200px;
+    }
+
+    /* Reduz o tamanho do botão de voltar para o topo */
+    #botao_voltar_pcima {
+        width: 50px;
+        height: 50px;
+        background-color: #a6a6a6;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 999;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* Ajusta a imagem dentro do botão de voltar para o topo */
+    #botao_voltar_pcima img {
+        width: 100%;
+        float: left;
+        padding-right: -20px;
+        margin-top: -1px;
+    }
+
+    #links_rodape {
+        color:  #1c6d41;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+
+    #links_rodape a {
+        text-decoration: none;
+    }
+
+    footer {
+        height: 310px;
+    }
+}
+
+
+
+@media (min-width: 1400px) {
+
+    #blog {
+        padding-left: 500px;
+    } 
+
+    main {
+        text-align: justify;
+        font-size: 25px;
+    }
+
+    #coluna1 {
+        width: 60%;
+        margin-left: -450px;  
+        position: relative;
+        padding-left: 250px;
+        font-size: 12px;
+    }
+
+    #ajustar_texto_para_tablet {
+        padding-top: 230px;
+    }
+
+    #imagem_ariranha {
+        margin-left: 650px;
+        position: absolute;
+    }
+
+    /* Estilo das colunas em telas grandes */
+    #colocar_duas_colunas {
+        display: flex;
+        gap: 10px;
+    }
+
+    #coluna2 {
+        width: 60%;
+        float: left;
+        padding-left: 50px;
+        margin-top: -40px;
+        padding-right: 200px;
+        font-size: 12px;
+    }
+
+    #site_dos_textos {
+        padding-left: 330px;
+        font-size: 12px;
+    }
+
+    /* Ajuste do nome do animal em telas grandes */
+    .nome_animal {
+        padding-left: 350px;
+        font-size: 19px;
+    }
+
+    /* Ajuste do nome científico em telas grandes */
+    .nome_cientifico {
+        padding-left: 350px;
+        font-size: 22px;
+    }
+
+    /* Ajuste do botão de voltar ao topo em telas grandes */
+    #botao_voltar_pcima {
+        width: 50px;
+        height: 50px;
+        background-color: #a6a6a6;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 999;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #botao_voltar_pcima img {
+        width: 100%;
+        float: left;
+        padding-right: -20px;
+        margin-top: -1px;
+    }
+
+   
+    #links_rodape {
+        color:  #1c6d41;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+
+    footer {
+        height: 350px;
+    }
+}

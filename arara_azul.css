@@ -1,0 +1,423 @@
+/* Remove padding e margem de todos os elementos */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Estilo para o logo */
+#logo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+/* Estilo para o blog */
+#blog {
+    padding-left: 120px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #4b779d;
+    height: 80px;
+}
+
+/* Centralizar e ajustar menu */
+#ajustar_menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Estilo dos links do menu */
+#ajustar_menu a {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo adicional para o menu */
+#editar_menu {
+    margin-left: 5px;
+    color: #a6a6a6;
+}
+
+/* Cor de fundo para o body */
+body {
+    background-color: #d9d9d9;
+}
+
+/* Estilo da linha horizontal */
+hr {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #a6a6a6;
+}
+
+/* Estilo para o nome do animal */
+.nome_animal {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+
+/* Estilo para o nome científico */
+.nome_cientifico {
+    padding-left: 20px;
+    color: #f29e38;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+/* Estilo para títulos */
+.titulo {
+    color: #f29e38;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+/* Estilo para a tabela arara 1 */
+#tabela_arara1 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Estilo para a tabela arara 2 */
+#tabela_arara2 {
+    margin-left: 50px;
+}
+
+/* Cor para o título da tabela */
+.titulo_tabela {
+    color: #f29e38;
+}
+
+/* Estilo para texto */
+.texto {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+/* Centralizar imagens */
+.imagens {
+    text-align: center;
+}
+
+/* Estilo para o footer */
+#footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Cor e altura do footer */
+footer {
+    background-color: #2e8b57;
+    height: 130px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo para o botão de voltar para cima */
+#botao_voltar_pcima {
+    width: 65px;
+    height: 65px;
+    background-color: #a6a6a6;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Estilo para o link dentro do botão */
+#botao_voltar_pcima a {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo da imagem dentro do botão */
+#botao_voltar_pcima img {
+    width: 100%;
+    float: left;
+    padding-right: -20px;
+    margin-top: -5px;
+}
+
+#links_rodape {
+    color:  #1c6d41;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#links_rodape a {
+    color: white;
+    flex-wrap: column;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+footer {
+    height: 320px;
+}
+
+/* Media query para telas médias */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Ajuste do menu para telas médias */
+    #ajustar_menu {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        font-size: 23px;
+    }
+
+    /* Estilo do blog para telas médias */
+    #blog {
+        margin-left: 200px;
+    }
+
+    /* Dividir em duas colunas */
+    #colocar_duas_colunas {
+        display: flex;
+        gap: 50px;
+    }
+
+    /* Estilo da primeira coluna */
+    #coluna1 {
+        width: 60%;
+        position: relative;
+        padding-left: 50px;
+    }
+
+    /* Ajuste da imagem da onça */
+    #imagem_onca {
+        margin-left: 240px;
+        position: absolute;
+    }
+
+    /* Estilo da segunda coluna */
+    #coluna2 {
+        width: 60%;
+        padding-right: 30px;
+        margin-top: -40px;
+    }
+
+    /* Ajuste do texto */
+    #site_dos_textos {
+        padding-left: 50px;
+    }
+
+    /* Ajuste do nome do animal */
+    .nome_animal {
+        padding-left: 60px;
+    }
+
+    /* Ajuste do nome científico */
+    .nome_cientifico {
+        padding-left: 60px;
+    }
+}
+
+/* Media query para telas grandes */
+@media (min-width: 992px) {
+    /* Reduzir tamanho do título */
+    .titulo {
+        font-size: 20px;
+    }
+
+    /* Ajuste do menu para telas grandes */
+    #ajustar_menu {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        font-size: 15px;
+    }
+
+    /* Estilo do blog para telas grandes */
+    #blog {
+        margin-left: 500px;
+    }
+
+    /* Ajuste das colunas */
+    #colocar_duas_colunas {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Estilo da primeira coluna para telas grandes */
+    #coluna1 {
+        width: 60%;
+        margin-left: -150px;
+        position: relative;
+        padding-left: 250px;
+        font-size: 12px;
+    }
+
+    /* Ajuste de texto para tablets */
+    #ajustar_texto_para_tablet {
+        padding-top: 200px;
+    }
+
+    /* Estilo da segunda coluna para telas grandes */
+    #coluna2 {
+        width: 60%;
+        float: left;
+        padding-left: 150px;
+        margin-top: -40px;
+        padding-right: 100px;
+        font-size: 12px;
+    }
+
+    /* Ajuste de texto */
+    #site_dos_textos {
+        padding-left: 95px;
+        font-size: 12px;
+    }
+
+    /* Ajuste do nome do animal */
+    .nome_animal {
+        padding-left: 120px;
+        font-size: 19px;
+    }
+
+    /* Ajuste do nome científico */
+    .nome_cientifico {
+        padding-left: 120px;
+        font-size: 22px;
+    }
+
+    /* Reduzir tamanho do botão de voltar para cima */
+    #botao_voltar_pcima {
+        width: 50px;
+        height: 50px;
+        background-color: #a6a6a6;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 999;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* Ajuste da imagem no botão */
+    #botao_voltar_pcima img {
+        width: 100%;
+        float: left;
+        padding-right: -20px;
+        margin-top: -1px;
+    }
+
+    #links_rodape {
+        color:  #1c6d41;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+
+    #links_rodape a {
+        text-decoration: none;
+    }
+
+    footer {
+        height: 310px;
+    }
+}
+
+
+
+@media (min-width: 1400px) {
+
+    #blog {
+        padding-left: 500px;
+    } 
+
+    main {
+        text-align: justify;
+        font-size: 25px;
+    }
+
+    #coluna1 {
+        width: 60%;
+        margin-left: 50px;  
+        position: relative;
+        padding-left: 250px;
+        font-size: 12px;
+    }
+
+    #ajustar_texto_para_tablet {
+        padding-top: 200px;
+    }
+
+    /* Estilo das colunas em telas grandes */
+    #colocar_duas_colunas {
+        display: flex;
+        gap: 10px;
+    }
+
+    #coluna2 {
+        width: 60%;
+        float: left;
+        padding-left: 50px;
+        margin-top: -40px;
+        padding-right: 200px;
+        font-size: 12px;
+    }
+
+    #site_dos_textos {
+        padding-left: 300px;
+        font-size: 12px;
+    }
+
+    /* Ajuste do nome do animal em telas grandes */
+    .nome_animal {
+        padding-left: 350px;
+        font-size: 19px;
+    }
+
+    /* Ajuste do nome científico em telas grandes */
+    .nome_cientifico {
+        padding-left: 350px;
+        font-size: 22px;
+    }
+
+    /* Ajuste do botão de voltar ao topo em telas grandes */
+    #botao_voltar_pcima {
+        width: 50px;
+        height: 50px;
+        background-color: #a6a6a6;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 999;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #botao_voltar_pcima img {
+        width: 100%;
+        float: left;
+        padding-right: -20px;
+        margin-top: -1px;
+    }
+
+    #links_rodape {
+        color:  #1c6d41;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+
+    footer {
+        height: 350px;
+    }
+}

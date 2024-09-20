@@ -1,0 +1,171 @@
+<!-- 
+    Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I da Etec Polivalente de Americana 
+    e tem como a finalidade de estudar e aprofundar os conhecimentos  em HTML, CSS e JS.
+
+    Autores: Octávio Augusto e Samuel Vieira
+    Turma: 1° AMS DS
+    Data: 20/09/2024
+ -->
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+     <head>
+             <!-- Required meta tags -->
+             <meta charset="utf-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+             <!-- Sobre o WebSite -->
+ 
+             <title>Contato</title>
+             <link rel="icon" href="">
+             <meta name="author" content="">
+             <meta name="description" content="">
+             <meta name="keywords" content="">
+             <link rel="stylesheet" href="contato.css">
+         </head>
+  
+     <body>
+
+        <div id="Topo"></div>
+     
+         <!-- Cabeçalho -->
+         <header>
+
+            <div id="Topo"></div>
+ 
+            <p id="blog">Blog</p>
+            <div id="logo">
+                Animais Do Brasil
+            </div>
+ 
+             <!-- Hamburger icon -->
+             <input class="side-menu" type="checkbox" id="side-menu"/>
+             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+ 
+             <!-- Navegação do site -->
+             <nav class="nav">
+               
+                <ul class="menu">
+                    <div id="container">
+                      <li>
+                        <a href="index.html">
+                            <div class="links">Home</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="animais.html">
+                            <div class="links">Animais</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="quem_somos.html">
+                            <div class="links">Quem Somos</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="contato.html">
+                            <div class="links">Contato</div>
+                        </a>
+                      </li>
+                      <li>
+                        <div id="ajustar_curiosidades">
+                          <a href="curiosidades.html">
+                              <div class="links">Curiosidades</div>
+                          </a>
+                        </div>
+                      </li>
+                    </div>        
+                  </ul>
+
+             </nav>
+ 
+         </header>
+
+         <!-- Conteúdo Principal --> 
+         <main>
+
+            <div id="contato">Contato</div>
+            <hr>
+
+            <br><br>
+
+            <h2>
+                <table border="2"><!--cria uma tabela-->
+                  <tr><!--e a primeira linha da tabela-->
+                      <th>Número de Telefone</th><!--sao os titulos da tabela-->
+                  </tr>
+          
+                  <tr>
+                      <td>+55 (19) 99620-4031</td><!--sao os dados da tabela-->
+                  </tr>
+          
+                  <tr>
+                      <td>+55 (19) 97115-9598</td>
+                  </tr>
+              </table>
+              </h2>
+
+              <br><br>
+
+              <form><!--cria um formulario-->
+                <h2>Entre em contato com agente</h2>
+                <br>
+
+                Nome: 
+                  <input type="text" name="Nome"><br> <br><!--tipo text permite voce escrever as palavras no tipo texto-->
+        
+                Email:
+                 <input type="text" name="Email"><br> <br>
+        
+                Sexo:
+                 <input type="radio" name="Sexo" value="M"> Masculino<!--tipo radio vc escolhe apenas uma opçao-->
+                 <input type="radio" name="Sexo" value="F"> Feminino
+                
+                <br><br>
+                 <textarea></textarea><br><!--textarea abre uma caixa de texto para o usuario escrever-->
+        
+                
+                <input id="editar_botao" type="submit" name="cadastrar">
+                
+                <br><br>
+            </form>
+
+            <br><br>
+
+            <div id="botao_voltar_pcima">
+                <a href="#Topo">
+                    <img src="imagens/seta_para_cima.png" alt="">
+                </a>
+            </div>
+
+         </main>
+        
+         <br><br><br><br><br><br>
+         
+         <!-- Rodape -->
+         <footer>
+          <div id="footer">
+              Projeto Exemplo para a disciplina de
+              <br>
+              PROGRAMAÇÃO WEB 1
+              <br><br>
+              © Copyright 2024 Samuel Vieira e Octávio Augusto
+              <br>
+              - Todos os Direitos reservados -
+          </div>
+
+          <div id="links_rodape">
+             Animais do Brasil
+            <br><br>
+
+             <a href="#">Termos e condições de uso</a>
+
+             <a href="#">Política de privacidade</a>
+
+             <a href="#">Política de Cookies</a>
+
+          </div>
+       </footer>
+
+     </body>
+</html>

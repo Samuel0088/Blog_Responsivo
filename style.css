@@ -1,0 +1,756 @@
+/* Reseta margens e preenchimentos de todos os elementos */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Define variáveis de cores para fácil reutilização */
+:root {
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+}
+
+/* Reseta margens e preenchimentos de todos os elementos e define o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o fundo da página e a fonte padrão */
+body {
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Remove o sublinhado dos links */
+a {
+    text-decoration: none;
+}
+
+/* Remove os marcadores das listas não ordenadas */
+ul {
+    list-style: none;
+}
+
+/* Estiliza o logo, centraliza a cor e o tamanho */
+.logo {
+    display: inline-block;
+    color: var(--white);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+/* Estiliza o menu de navegação: escondido inicialmente e com transição suave */
+.nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #4b779d;
+    overflow: hidden;
+    max-height: 0; /* Inicialmente escondido */
+    transition: max-height .5s ease-out; /* Transição suave para a exibição */
+}
+
+/* Estiliza os links no menu */
+.menu a {
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+
+/* Estiliza o ícone do menu hambúrguer */
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+/* Estiliza as linhas do ícone do menu hambúrguer */
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    top: -70px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+/* Esconde o checkbox que controla o menu */
+.side-menu {
+    display: none;
+}
+
+/* Exibe o menu quando o checkbox está marcado */
+.side-menu:checked ~ nav {
+    max-height: 100%;
+}
+
+/* Estiliza o ícone do menu quando o checkbox está marcado */
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* Impede o scroll quando o menu está aberto */
+body:has(.side-menu:checked) {
+    overflow: hidden;
+}
+
+/* Estiliza o logo do cabeçalho */
+#logo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+/* Estiliza o elemento #blog */
+#blog {
+    padding-left: 120px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Estiliza o cabeçalho do site */
+header {
+    background-color: #4b779d;
+    height: 80px;
+}
+
+/* Estiliza o menu de navegação fixo e escuro */
+.nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--black);
+    overflow: hidden;
+    max-height: 0; /* Inicialmente escondido */
+    transition: max-height .5s ease-out; /* Transição suave para a exibição */
+}
+
+/* Estiliza os links no menu com cor branca e estilo de hover */
+.menu a {
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+
+.menu a:hover {
+    background-color: var(--gray); /* Cor de fundo ao passar o mouse */
+}
+
+/* Define a cor dos links */
+a {
+    color: #f29e38;
+}
+
+/* Esconde a imagem para PCs */
+#colocar_imagem_para_pc {
+    display: none;
+}
+
+/* Ajusta a largura da imagem */
+#ajustar_imagem {
+    width: 100%;
+}
+
+/* Altera a cor de fundo do body */
+body {
+    background-color: #d9d9d9;
+}
+
+/* Estiliza os destaques */
+#destaques {
+    margin-top: 50px;
+    font-size: 25px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+/* Estiliza a seção de aprendizado contínuo */
+#continue_aprendendo {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+/* Estiliza a linha horizontal */
+hr {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #a6a6a6;
+}
+
+/* Estiliza a borda de elementos */
+.borda {
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estiliza a imagem dentro de elementos com a classe borda */
+.borda img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Estiliza o título dentro de elementos com a classe borda */
+.borda h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Estiliza os links dentro de elementos com a classe borda */
+.borda a {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Estiliza o rodapé */
+#footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Estiliza o fundo do rodapé */
+footer {
+    background-color: #2e8b57;
+    height: 130px;
+    color: white;
+    text-align: center;
+}
+
+/* Estiliza o botão de voltar ao topo */
+#botao_voltar_pcima {
+    width: 65px;
+    height: 65px;
+    background-color: #a6a6a6;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    bottom: 10px;
+    right: 10px;
+}
+
+#botao_voltar_pcima a {
+    width: 100%;
+    height: 100%;
+}
+
+#botao_voltar_pcima img {
+    width: 100%;
+    float: left;
+    padding-right: -20px;
+}
+
+#links_rodape {
+    color:  #1c6d41;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#links_rodape a {
+    color: white;
+    flex-wrap: column;
+    margin: 10px 0;
+}
+
+footer {
+    height: 320px;
+}
+
+/* Estilos específicos para tamanhos de tela entre 768px e 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Estiliza o #blog para telas médias */
+    #blog {
+        padding-left: 300px;
+        padding-top: 20px;
+        font-size: 20px;
+        color: white;
+    }
+
+    /* Estiliza o #logo para telas médias */
+    #logo {
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+    }
+
+    /* Ajusta a altura do cabeçalho */
+    header {
+        height: 160px;
+    }
+
+    /* Estiliza o menu de navegação para telas médias */
+    .nav {
+        max-height: none; /* Exibe o menu */
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    /* Alinha os itens do menu horizontalmente */
+    .menu li {
+        float: left;
+    }
+
+    /* Remove a cor de fundo do menu ao passar o mouse e altera a cor do texto */
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--gray);
+    }
+
+    /* Esconde o ícone do menu hambúrguer */
+    .hamb {
+        display: none;
+    }
+
+    /* Estiliza a seção de links */
+    .links {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-right: 10px;
+        margin: 5px;
+    }
+
+    /* Esconde a imagem específica */
+    #img_tudo_que_precisa_saber {
+        display: none;
+    }
+
+    /* Exibe a imagem para PCs */
+    #colocar_imagem_para_pc {
+        width: 100%;
+        display: flex;
+    }
+
+    /* Ajusta o layout de duas colunas */
+    #colocar_duas_colunas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-left: 10px;
+    }
+    #colocar_duas_colunas2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-left: 450px;
+        margin-top: -520px;
+    }
+
+    #ajustar_duas_colunas2 {
+        margin-top: 5px;
+    }
+
+    /* Estiliza a seção de aprendizado contínuo para telas médias */
+    #continue_aprendendo {
+        margin-top: 50px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* Estiliza o botão de voltar ao topo para telas médias */
+    #botao_voltar_pcima {
+        width: 80px;
+        height: 80px;
+        background-color: #a6a6a6;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 999;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #botao_voltar_pcima a {
+        width: 100%;
+        height: 100%;
+    }
+
+    #botao_voltar_pcima img {
+        width: 100%;
+        float: left;
+        padding-right: -20px;
+    }
+
+    #links_rodape {
+        color:  #1c6d41;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #links_rodape a {
+        color: white;
+        flex-wrap: column;
+        margin: 10px 0;
+    }
+    
+    footer {
+        height: 320px;
+    }
+}
+
+/* Estilos específicos para telas maiores que 992px */
+@media (min-width: 992px) {
+
+    /* Estiliza o #blog para telas grandes */
+    #blog {
+        padding-left: 600px;
+        padding-top: 20px;
+        font-size: 20px;
+        color: white;
+    }
+
+    /* Estiliza o #logo para telas grandes */
+    #logo {
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+    }
+
+    /* Ajusta a altura do cabeçalho */
+    header {
+        height: 190px;
+    }
+
+    /* Estiliza o menu de navegação para telas grandes */
+    .nav {
+        max-height: none; /* Exibe o menu */
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    /* Alinha os itens do menu horizontalmente */
+    .menu li {
+        float: left;
+    }
+
+    /* Remove a cor de fundo do menu ao passar o mouse e altera a cor do texto */
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--gray);
+    }
+
+    /* Esconde o ícone do menu hambúrguer */
+    .hamb {
+        display: none;
+    }
+
+    /* Estiliza a seção de links para telas grandes */
+    .links {
+        padding-top: 15px;
+        float: right;
+        padding-right: 120px;
+    }
+
+    /* Estiliza o efeito de hover nos links da seção de links */
+    .links:hover {
+        background-color: #a6a6a6;
+        padding: 10px;
+        padding-right: 100px;
+        transition: 0.8s;
+        border-radius: 10px;
+    }
+
+    /* Esconde a imagem específica */
+    #img_tudo_que_precisa_saber {
+        display: none;
+    }
+
+    /* Estiliza a imagem do PC */
+    #img_pc {
+        position: relative;
+        top: -80px;
+        z-index: -1;
+    }
+
+    /* Exibe a imagem para PCs */
+    #colocar_imagem_para_pc {
+        width: 100%;
+        display: flex;
+    }
+
+    /* Ajusta a largura da imagem */
+    #ajustar_imagem {
+        width: 100%;
+    }
+
+    /* Estiliza o layout da container para telas grandes */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Estiliza os conteúdos dentro da container */
+    .conteudo {
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+    }
+
+    /* Estiliza os elementos destacados com três colunas */
+    .animal_destaque {
+        flex: 1 1 calc(33.333% - 20px); /* Três colunas com espaçamento */
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+    }
+
+    /* Ajusta o layout de duas colunas para telas grandes */
+    #colocar_duas_colunas2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ajustar_duas_colunas2 {
+        margin-top: 5px;
+    }
+
+    /* Estiliza o link com efeito de sublinhado ao passar o mouse */
+    .hover_sublinhado {
+        position: relative;
+        display: inline-block; /* Ajusta o link ao tamanho do conteúdo */
+        text-decoration: none; /* Remove o sublinhado padrão */
+        color: #f29e38; /* Cor do texto */
+        overflow: hidden; /* Oculta o excesso do pseudo-elemento */
+    }
+
+    .hover_sublinhado::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0; /* Começa com a largura 0 */
+        height: 2px; /* Espessura do sublinhado */
+        background-color: #f29e38; /* Cor do sublinhado */
+        transition: width 0.3s ease; /* Transição suave da largura */
+    }
+
+    .hover_sublinhado:hover::after {
+        width: 100%; /* Expande para 100% da largura do link */
+    }
+
+    /* Estiliza a seção de destaques para telas grandes */
+    #destaques {
+        margin-top: 60px;
+        font-size: 25px;
+        padding-left: 70px;
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+
+    /* Estiliza a seção de aprendizado contínuo para telas grandes */
+    #continue_aprendendo {
+        margin-top: 50px;
+        font-size: 25px;
+        font-weight: bold;
+        padding-left: 70px;
+        padding-bottom: 40px;
+    }
+
+    /* Estiliza o botão de voltar ao topo para telas grandes */
+    #botao_voltar_pcima {
+        width: 50px;
+        height: 50px;
+        background-color: #a6a6a6;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 999;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #botao_voltar_pcima img {
+        width: 100%;
+        float: left;
+        padding-right: -20px;
+        margin-top: -1px;
+    }
+
+    #links_rodape {
+        color:  #1c6d41;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+
+    footer {
+        height: 310px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    #blog {
+        padding-left: 1000px;
+    } 
+
+    .nav {
+        color: white;
+        max-height: none; /* Exibe o menu */
+        top: 0;
+        position: relative;
+        width: 100%; /* Garante que a .nav ocupe toda a largura disponível */
+        background-color: transparent;
+        margin: 0 auto; /* Centraliza horizontalmente se houver um tamanho fixo */
+        display: flex; /* Utiliza Flexbox para layout */
+        justify-content: center; /* Centraliza o conteúdo da .nav */
+    }
+    
+    .menu {
+        list-style-type: none; /* Remove os marcadores dos itens da lista */
+        padding: 0;
+        margin: 0;
+        display: flex; /* Utiliza Flexbox para alinhar os itens do menu horizontalmente */
+    }
+    
+    .menu li {
+        margin-left: 15px; /* Adiciona espaçamento entre os itens do menu */
+    }
+    
+    .menu a {
+        text-decoration: none; /* Remove o sublinhado dos links */
+        color: inherit; /* Usa a cor do texto do item de menu */
+    }
+    
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--gray);
+    }
+    
+    .hamb {
+        display: none; /* Esconde o ícone do menu hambúrguer */
+    }
+    
+    .links {
+        padding-top: 15px;
+        display: flex;
+        justify-content: center; /* Centraliza os links dentro da seção */
+        width: 100%; /* Garante que a .links ocupe toda a largura disponível */
+    }
+    
+    /* Estiliza o efeito de hover nos links da seção de links */
+    .links:hover {
+        background-color: #a6a6a6;
+        padding: 10px;
+        padding-right: 100px;
+        transition: 0.8s;
+        border-radius: 10px;
+    }
+
+     /* Estiliza os conteúdos dentro da container */
+     .conteudo {
+        padding: 10px;
+        text-align: center;
+        width: 300px;
+        height: 150px;
+    }
+
+    /* Estiliza os elementos destacados com três colunas */
+    .animal_destaque {
+        flex: 1 1 calc(33.333% - 20px); /* Três colunas com espaçamento */
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        width: 300px;
+        height: 150px;
+    }
+
+    .container img {
+        height: auto; /* Mantém a proporção da imagem */
+        width: 200px; /* Ajuste o valor conforme necessário para aumentar a imagem */
+    }
+
+    /* Estilo do botão de voltar ao topo */
+    #botao_voltar_pcima {
+        width: 65px;
+        height: 65px;
+        background-color: #a6a6a6;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 999;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #botao_voltar_pcima a {
+        width: 100%;
+        height: 100%;
+    }
+
+    #botao_voltar_pcima img {
+        width: 100%;
+        float: left;
+        padding-right: -20px;
+    }
+
+    #links_rodape {
+        color:  #1c6d41;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+
+    footer {
+        height: 350px;
+    }
+}
